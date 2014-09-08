@@ -1,107 +1,12 @@
 <div class="container-fluid">
-  <div class="row account_nav">
-    <div class="col-md-4">
-      <p>
-        Welcome, new to Daft?
-        <a href="#">Subscribe Now</a>
-      </p>
-    </div>
+  <%= render "account_nav" %>
 
-    <div class="col-md-6 col-md-offset-2">
-      <form class="form-inline pull-right">
-        <input type="text" name="username" placeholder="Username" class="form-control"/>
-        <input type="password" name="password" placeholder="Password" class="form-control"/>
-        <input type="submit" value="sign in" class="btn btn-primary"/>
-      </form>
-    </div>
-  </div> <!-- Account Nav -->
-
-  <div class="row category_nav">
-    <div class="col-md-2 logo"><img src="<%= image_url "daft_logo.png" %>" class="img-responsive"/></div>
-    <div class="col-md-8 col-md-offset-1">
-      <ul>
-        <li><a href="#"><img src="<%= image_url "nav_tech.png" %>" class="img-responsive"/></a></li>
-        <li><a href="#"><img src="<%= image_url "nav_finance.png" %>" class="img-responsive"/></a></li>
-        <li><a href="#"><img src="<%= image_url "nav_art.png" %>" class="img-responsive"/></a></li>
-        <li><a href="#"><img src="<%= image_url "nav_music.png" %>" class="img-responsive"/></a></li>
-        <li><a href="#"><img src="<%= image_url "nav_food.png" %>" class="img-responsive"/></a></li>
-        <li><a href="#"><img src="<%= image_url "nav_culture.png" %>" class="img-responsive"/></a></li>
-      </ul>
-    </div>
-  </div> <!-- category_nav -->
+  <%= render "category_nav" %>
 
   <div class="row category_index">
-    <div class="col-md-8 latest">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <h1 class="tech">Latest Articles in Tech</h1>
-        </div>
-      </div>
-
-      <% 6.times do %>
-        <div class="row article_row">
-          <div class="col-md-3 col-md-offset-1">
-            <img src="http://placehold.it/500x500" class="img-responsive"/>
-          </div>
-          <div class="col-md-7">
-            <h2>Nasa announces plans to launch chimp into sun</h2>
-
-            <p class="byline">by Beverly Miller // 8.12.14</p>
-
-            <p>All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. </p>
-          </div>
-        </div>
-      <% end %>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div "text-center">
-            <ul class="pagination">
-              <li><a href="#">&laquo;</a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">&raquo;</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 breaking">
-      <h2>Breaking News</h2>
-
-      <% 6.times do %>
-        <div class="row">
-          <div class="col-md-2 col-md-offset-1 text-centered">
-            <img src="<%= image_url "badge_finance.png" %>" class="img-responsive"/>
-          </div>
-
-          <div class="col-md-8">
-            <p>Blah de blah blah</p>
-            <p class="byline">By Dr. Seuss</p>
-          </div>
-        </div>
-      <% end %>
-
-    </div>
+    <%= render "latest" %>
+    <%= render "breaking" %>
   </div> <!-- category_index -->
 
-  <div class="row ourfooter">
-    <div class="col-md-12">
-      <img src="<%= image_url "daft_logo_footer.png" %>">
-
-      <h2>Join our mailing list for Daft News!</h2>
-      <form class="form-inline">
-        <input type="text" name="username" placeholder="Username" class="form-control"/>
-        <input type="password" name="password" placeholder="Password" class="form-control"/>
-        <input type="submit" value="sign in" class="btn btn-primary"/>
-      </form>
-
-
-      <p>Copyright 2014, all rights reserved</p>
-    </div>
-  </div>
+  <%= render "ourfooter" %>
 </div>

@@ -121,6 +121,36 @@ $brand-primary: red;
       padding-top: 10px;
     }
   }
+
+  .article {
+    background: white;
+    color: black;
+
+    .thumbnailrow {
+      padding-left: 15px;
+      padding-right: 15px;
+      .col-xs-3 {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .about_author {
+      background: #50cfaa;
+      color: white;
+
+      h1 {
+        margin-top: 0;
+        span {
+          padding-left: 10px;
+          padding-right: 10px;
+          background: white;
+          color: #50cfaa;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 }
 
 .ourfooter {
@@ -131,5 +161,61 @@ $brand-primary: red;
   text-align: center;
   img {
     max-height: 62px;
+  }
+}
+
+.homepage_nav {
+  background: black;
+
+  .control {
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      max-height: 100px;
+      margin-top: 130px;
+      margin-left: auto;
+      margin-right: auto;
+
+      display: block;
+    }
+  }
+}
+
+.profile {
+  .avatar {
+    border-radius: 100%;
+    border: 4px solid white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pencil {
+    height: 20px;
+    width: 20px;
+    float: right;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .underline {
+    border-bottom: 1px solid gray;
+  }
+
+  h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: gray;
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  img.badgeicon {
+    height: 30px;
+    width: 30px;
   }
 }
