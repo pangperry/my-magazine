@@ -33,6 +33,7 @@ $brand-primary: red;
       border: none;
       width: 150px;
       font-size: 10px;
+      height: 34px;
     }
 
     .btn {
@@ -40,6 +41,23 @@ $brand-primary: red;
       border: none;
       text-transform: uppercase;
       font-size: 10px;
+      height: 34px;
+    }
+
+    .input-group button {
+      background-color: #444;
+      color: white;
+    }
+
+    .circle {
+      background-color: #888;
+      border-radius: 100%;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      color: #444;
+      font-size: 11px;
+      font-weight: bold;
     }
   }
 }
@@ -89,18 +107,14 @@ $brand-primary: red;
   h1 {
     font-size: 30px;
 
-    &.tech {
-      background: image-url( "badge_tech.png" );
+    &.tech, &.culture {
       background-repeat: no-repeat;
       background-size: 30px 30px;
       padding-left: 35px;
     }
-    &.culture {
-      background: image-url( "badge_culture.png" );
-      background-repeat: no-repeat;
-      background-size: 30px 30px;
-      padding-left: 35px;
-    }
+
+    &.tech    { background: image-url( "badge_tech.png" );    }
+    &.culture { background: image-url( "badge_culture.png" ); }
   }
 
   .article_row {

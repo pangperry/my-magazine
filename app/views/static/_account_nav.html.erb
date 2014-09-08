@@ -9,7 +9,18 @@
   <div class="col-md-6 col-md-offset-2">
     <form class="form-inline pull-right">
       <input type="text" name="username" placeholder="Username" class="form-control"/>
-      <input type="password" name="password" placeholder="Password" class="form-control"/>
+
+      <div class="input-group">
+        <input type="password" name="password" placeholder="Password" class="form-control"/>
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="circle">
+              ?
+            </span>
+          </button>
+        </span>
+      </div>
+
       <input type="submit" value="sign in" class="btn btn-primary"/>
     </form>
   </div>
