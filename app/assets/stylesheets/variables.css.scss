@@ -1,6 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,300,600);
 
 $font-family-sans-serif: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+
+$font-family-base: $font-family-serif;
+
+
+$brand-primary: #ec6646;
+$dark-gray: #999;
+
+$pagination-border: none;
+$pagination-color: black;
+$pagination-hover-bg: transparent;
+$pagination-active-bg: transparent;
+$pagination-active-color: $brand-primary;
+$pagination-margin: 20px;
+
 
 // $brand-primary: #ff6000;
 // $body-bg: #747474;

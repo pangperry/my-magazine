@@ -15,6 +15,7 @@ $brand-primary: red;
 }
 
 .account_nav {
+  font-family: $font-family-sans-serif;
   background: black;
   color: white;
 
@@ -27,6 +28,8 @@ $brand-primary: red;
   .form-inline {
 
     input.form-control {
+      font-family: $font-family-serif;
+      font-style: italic;
       border-radius: 0;
       background: #444;
       color: #ccc;
@@ -101,26 +104,37 @@ $brand-primary: red;
   }
   .byline {
     text-transform: uppercase;
-    color: #ccc;
+    font-family: $font-family-sans-serif;
+    font-size: 12px;
+    color: $dark-gray;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 30px;
+
 
     &.tech, &.culture {
       background-repeat: no-repeat;
       background-size: 30px 30px;
-      padding-left: 35px;
+      padding-left: 45px;
     }
 
-    &.tech    { background: image-url( "badge_tech.png" );    }
-    &.culture { background: image-url( "badge_culture.png" ); }
+    &.tech    { background-image: image-url( "badge_tech.png" );    }
+    &.culture { background-image: image-url( "badge_culture.png" ); }
   }
 
   .article_row {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     padding-top: 30px;
+
+    h2 {
+      margin-top: -5px;
+      font-weight: bold;
+      font-size: 24px;
+    }
   }
 
   .breaking {
@@ -233,3 +247,12 @@ $brand-primary: red;
     width: 30px;
   }
 }
+
+
+.pagination > li > a, .pagination > li > span {
+  font-family: $font-family-serif;
+  padding: 0;
+  margin-left: $pagination-margin;
+  margin-right: $pagination-margin;
+}
+
