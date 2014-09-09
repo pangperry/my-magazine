@@ -72,21 +72,60 @@ $brand-primary: red;
       max-height: 65px;
     }
   }
-  ul {
-    margin-top: 20px;
-    list-style-type: none;
-    padding: 0;
 
-    li {
-      display: inline;
-      margin-right: 50px;
+  .category-list {
+    .category-item {
+
+      height: 120px;
+      text-align: center;
+
+      &.active {
+
+        border-bottom-width: 15px;
+        border-bottom-style: solid;
+
+        &.category-tech {
+          border-bottom-color: #50cfaa;
+        }
+        &.category-finance {
+          border-bottom-color: green;
+        }
+        &.category-art {
+          border-bottom-color: purple;
+        }
+        &.category-music {
+          border-bottom-color: blue;
+        }
+        &.category-food {
+          border-bottom-color: yellow;
+        }
+        &.category-culture {
+          border-bottom-color: red;
+        }
+      }
+
+      a {
+        padding-top: 30px;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
 
       img {
-        max-height: 65px;
+        height: 45px;
         display: inline;
       }
     }
   }
+}
+
+.category-nav-stripes {
+  height: 15px;
+  background-image: url('/assets/pattern.png');
+  background-size: 5px 5px;
+  margin-top: -15px;
+  position: relative;
+  z-index: 1;
 }
 
 .centered {
@@ -101,6 +140,7 @@ $brand-primary: red;
   .latest {
     background: white;
     color: black;
+
   }
   .byline {
     text-transform: uppercase;
@@ -126,7 +166,6 @@ $brand-primary: red;
   }
 
   .article_row {
-    border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     padding-top: 30px;
 
@@ -178,6 +217,11 @@ $brand-primary: red;
         }
       }
     }
+  }
+
+  .article-divider {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
