@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'static/subscribe'
 
+  get 'static/new'
+
   get 'static/profile'
 
   root 'static#index'

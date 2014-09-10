@@ -311,3 +311,26 @@
   margin-right: $pagination-margin;
 }
 
+
+.post-form {
+
+  .photo-placeholder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .post-category {
+    display: block;
+    img {
+      height: 25px;
+    }
+  }
+
+
+}
