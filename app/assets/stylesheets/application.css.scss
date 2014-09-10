@@ -131,7 +131,7 @@
 }
 
 .category_index {
-  background: #ddd;
+  background: $sidebar-gray;
   color: white;
 
   .latest {
@@ -150,6 +150,7 @@
     font-size: 24px;
     font-style: italic;
     line-height: 30px;
+    margin-top: 25px;
 
 
     &.tech, &.culture {
@@ -176,14 +177,27 @@
   .breaking {
     color: black;
 
-    .byline {
-      color: #333;
-    }
     .row {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-top: 5px;
     }
+    h2 {
+      font-size: 24px;
+      font-style: italic;
+      line-height: 30px;
+    }
+
+    hr {
+      border-color: darken( $gray-lighter, 10% );
+      margin-right: -15px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 38px;
+    }
+
   }
 
   .article {
