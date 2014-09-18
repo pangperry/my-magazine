@@ -67,3 +67,10 @@ gem "bootstrap-sass"
 gem "modernizr-rails"
 gem "meta-tags", require: "meta_tags"
 gem "gibbon"
+
+
+
+
+gem 'hirb', :group=>:development
+
+gem 'httparty'
