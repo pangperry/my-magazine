@@ -69,9 +69,13 @@
         </div>
 
         <div class="form-group">
-          <div class="pull-left">
-            <a href="#">Delete Post</a>
-          </div>
+
+          <% if not @article.new_record? %>
+            <div class="pull-left">
+              <%= link_to 'Delete', article_path(@article), :method=>:delete, :data => {:confirm => 'Are you sure?' } %>
+            </div>
+          <% end %>
+
           <div class="pull-right">
             <div class="pull-left">
               <a href="#">Cancel</a>
@@ -85,35 +89,36 @@
         
         <label>Category</label>
 
-        <label for="post_category_tech" class="post-category">
-          <input type="radio" name="post_category" id="post_category_tech"/>
+        
+        <%= f.label :category_tech, :class=>'post-category' do %>
+          <%= f.radio_button :category, 'tech' %>
           <img src="<%=image_url('cat_tech.png')%>" class="img-responsive">
-        </label>
-
-        <label for="post_category_finance" class="post-category">
-          <input type="radio" name="post_category" id="post_category_finance"/>
+        <% end %>
+        
+        <%= f.label :category_finance, :class=>'post-category' do %>
+          <%= f.radio_button :category, 'finance' %>
           <img src="<%=image_url('cat_finance.png')%>" class="img-responsive">
-        </label>
-
-        <label for="post_category_art" class="post-category">
-          <input type="radio" name="post_category" id="post_category_art"/>
+        <% end %>
+        
+        <%= f.label :category_art, :class=>'post-category' do %>
+          <%= f.radio_button :category, 'art' %>
           <img src="<%=image_url('cat_art.png')%>" class="img-responsive">
-        </label>
-
-        <label for="post_category_music" class="post-category">
-          <input type="radio" name="post_category" id="post_category_music"/>
+        <% end %>
+        
+        <%= f.label :category_music, :class=>'post-category' do %>
+          <%= f.radio_button :category, 'music' %>
           <img src="<%=image_url('cat_music.png')%>" class="img-responsive">
-        </label>
-
-        <label for="post_category_food" class="post-category">
-          <input type="radio" name="post_category" id="post_category_food"/>
+        <% end %>
+        
+        <%= f.label :category_food, :class=>'post-category' do %>
+          <%= f.radio_button :category, 'food' %>
           <img src="<%=image_url('cat_food.png')%>" class="img-responsive">
-        </label>
-
-        <label for="post_category_culture" class="post-category">
-          <input type="radio" name="post_category" id="post_category_culture"/>
+        <% end %>
+        
+        <%= f.label :category_culture, :class=>'post-category' do %>
+          <%= f.radio_button :category, 'culture' %>
           <img src="<%=image_url('cat_culture.png')%>" class="img-responsive">
-        </label>
+        <% end %>
 
 
       </div>

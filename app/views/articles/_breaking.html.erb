@@ -14,11 +14,10 @@
   </div>
 
 
-  <% @breaking_news_items.each do |article| %>
-
-    <%= render :partial=>'breaking_headline' %>
-
-
+  <% @breaking_news_items.each do |bumblebee| %>
+    <%= render :partial=>'breaking_headline', :locals => { :breaking_headline => bumblebee } %>
   <% end %>
+
+  <%#= render :partial => 'breaking_headline', :collection=>@breaking_news_items %>
 
 </div>

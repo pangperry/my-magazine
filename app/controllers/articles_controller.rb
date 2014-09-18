@@ -1,6 +1,18 @@
 class ArticlesController < ApplicationController
   def show
   	@article = Article.find(params[:id])
+
+    @category = @article.category
+
+    @breaking_news_items = Article.all.order('created_at desc').limit(5)
+
+    respond_to do |format|
+      format.html
+      format.json do
+        render :json => @article
+      end
+    end
+
   end
 
   def new
@@ -14,9 +26,18 @@ class ArticlesController < ApplicationController
   end
 
   def index
+    @articles = Article.all
   end
 
   def edit
+    @article = Article.find(params[:id])
+  end
+
+  def update
+    @article = Article.find(params[:id])
+    @article.update( article_params )
+
+    redirect_to article_path(@article)
   end
 
   private
