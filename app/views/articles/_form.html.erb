@@ -5,6 +5,8 @@
     <div class="row">
       <div class="col-md-7 col-md-offset-1">
 
+        <%= render :partial => 'errors', :locals=>{:model => @article} %>
+
         <div class="form-group">
           <label>Photos</label>
           <div class="row photo-uploads">
@@ -23,31 +25,37 @@
 
             <div class="col-md-3">
               <div class="panel panel-default text-center">
-                <label for="post_photo_2">
-                  <img src="<%=image_url('add_photo_icon.png')%>" class="photo-placeholder">
-                  Photo 2
-                  <input type="file" id="post_photo_2"></input>
-                </label>
+                <div class="panel-body">
+                  <label for="post_photo_2">
+                    <img src="<%=image_url('add_photo_icon.png')%>" class="photo-placeholder">
+                    Photo 2
+                    <input type="file" id="post_photo_2"></input>
+                  </label>
+                </div>
               </div>
             </div>
 
             <div class="col-md-3">
               <div class="panel panel-default text-center">
-                <label for="post_photo_3">
-                  <img src="<%=image_url('add_photo_icon.png')%>" class="photo-placeholder">
-                  Photo 3
-                  <input type="file" id="post_photo_3"></input>
-                </label>
+                <div class="panel-body">
+                  <label for="post_photo_3">
+                    <img src="<%=image_url('add_photo_icon.png')%>" class="photo-placeholder">
+                    Photo 3
+                    <input type="file" id="post_photo_3"></input>
+                  </label>
+                </div>
               </div>
             </div>
 
             <div class="col-md-3">
               <div class="panel panel-default text-center">
-                <label for="post_photo_3">
-                  <img src="<%=image_url('add_photo_icon.png')%>" class="photo-placeholder">
-                  Photo 4
-                  <input type="file" id="post_photo_4"></input>
-                </label>
+                <div class="panel-body">
+                  <label for="post_photo_3">
+                    <img src="<%=image_url('add_photo_icon.png')%>" class="photo-placeholder">
+                    Photo 4
+                    <input type="file" id="post_photo_4"></input>
+                  </label>
+                </div>
               </div>
             </div>
           </div>

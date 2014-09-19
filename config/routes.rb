@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   resources :articles
 
+  get 'category/:category' => 'articles#category', :as=>:category
+
   get 'static/category'
 
   get 'static/article'

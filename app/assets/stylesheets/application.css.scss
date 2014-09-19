@@ -148,14 +148,18 @@
     margin-top: 25px;
 
 
-    &.tech, &.culture {
+    &.tech, &.culture, &.music, &.food, &.finance, &.art {
       background-repeat: no-repeat;
       background-size: 30px 30px;
       padding-left: 45px;
     }
 
-    &.tech    { background-image: image-url( "badge_tech.png" );    }
+    &.tech    { background-image: image-url( "badge_tech.png"    ); }
     &.culture { background-image: image-url( "badge_culture.png" ); }
+    &.finance { background-image: image-url( "badge_finance.png" ); }
+    &.food    { background-image: image-url( "badge_food.png"    ); }
+    &.music   { background-image: image-url( "badge_music.png"   ); }
+    &.art     { background-image: image-url( "badge_art.png"     ); }
   }
 
   .article_row {
@@ -329,3 +333,26 @@
 
 
 }
+
+.field_with_errors {
+  input, textarea {
+    border: 1px solid red;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

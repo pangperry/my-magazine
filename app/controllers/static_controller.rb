@@ -3,6 +3,9 @@ class StaticController < ApplicationController
   end
   
   def category
+    @breaking_news_items = []
+
+    @category = 'tech'
   end
 
   def article
