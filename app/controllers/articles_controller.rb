@@ -31,7 +31,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles = Article.all
+    @articles = Article.order('created_at desc').paginate(:page => params[:page], :per_page => 2)
   end
 
   def edit

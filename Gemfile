@@ -73,4 +73,4 @@ gem "gibbon"
 
 gem 'hirb', :group=>:development
 
-gem 'httparty'
+gem 'will_paginate-bootstrap'
