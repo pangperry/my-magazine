@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   resources :articles
 
+  resource :sessions
+
+  get 'sessions/destroy' => 'sessions#destroy'
+
   get 'category/:category' => 'articles#category', :as=>:category
 
   get 'static/category'
