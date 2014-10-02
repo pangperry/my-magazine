@@ -2,14 +2,19 @@
   <div class="col-md-12">
     <img src="<%= image_url "daft_logo_footer.png" %>">
 
-    <h2>Join our mailing list for Daft News!</h2>
-    <form class="form-inline">
-      <input type="text" name="username" placeholder="Username" class="form-control"/>
-      <input type="password" name="password" placeholder="Password" class="form-control"/>
-      <input type="submit" value="sign in" class="btn btn-primary"/>
-    </form>
+    <h4 id="mailing-list-signup-heading">Join our mailing list for Daft News!</h4>
+
+    <%= form_tag mailing_list_sign_up_path, :class=>'form-inline', :remote=>false do %>
+
+      <%= text_field_tag :name, '', :placeholder=>'Name', :class=>'form-control' %>
+
+      <%= text_field_tag :email, '', :placeholder=>'Email', :class=>'form-control' %>
+
+      <%= submit_tag 'Sign up', :class=>'btn btn-primary' %>
+
+    <% end %>
 
 
-    <p>Copyright 2014, all rights reserved</p>
+    <p>&copy; 2014, all rights reserved</p>
   </div>
 </div>

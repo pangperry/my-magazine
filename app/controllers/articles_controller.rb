@@ -15,6 +15,13 @@ class ArticlesController < ApplicationController
   end
 
   def new
+
+    if not is_signed_in?
+      redirect_to root_path
+      flash[:notice] = "You must be logged in to create an article"
+      return
+    end
+
   	@article = Article.new
   end
 

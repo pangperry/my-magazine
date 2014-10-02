@@ -8,18 +8,16 @@
 
   <div class="col-md-6 col-md-offset-2">
 
-    <!--form class="form-inline pull-right"-->
-
     <% if is_signed_in? %>
 
-      <%= link_to 'Sign out', sessions_path, method: :delete %>
+      <div class='pull-right'>
+        <%= link_to 'Create an Article', new_article_path, :class=>'btn btn-default' %>
 
-      <%= link_to 'Create an Article', new_article_path %>
+        <%= link_to 'Sign out', sessions_path, :method => :delete, :class=> 'btn btn-primary'%>
+      </div>
 
     <% else %>
       <%= form_tag sessions_path, :class=>'form-inline pull-right' do %>
-
-        <%= link_to( 'Create Article', new_article_path ) %>
 
         <input type="text" name="email" placeholder="Email" class="form-control" autocomplete="off"/>
 

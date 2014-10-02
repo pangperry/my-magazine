@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resource :sessions
 
+  post 'mailing_list/sign_up'
+
   get 'sessions/destroy' => 'sessions#destroy'
 
   get 'category/:category' => 'articles#category', :as=>:category
